@@ -22,16 +22,18 @@ const cardData = [
 
 function App() {
   return (
-    <div className="app-container">
+    <div>
       <Text />
-      {cardData.map((card, index) => (
-        <Card
-          key={index}
-          title={card.title}
-          imageUrl={card.imageUrl}
-          text={card.text}
-        />
-      ))}
+      <div className="app-container">
+        {cardData.map((card, index) => (
+          <Card
+            key={index}
+            title={card.title}
+            imageUrl={card.imageUrl}
+            text={card.text}
+          />
+        ))}
+      </div>
     </div>
   );
 }
