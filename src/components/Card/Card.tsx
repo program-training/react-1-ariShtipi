@@ -10,7 +10,7 @@ interface CardProps {
 const Card = (props: CardProps) => {
   const { title, imageUrl, text } = props;
   const [selectedBackgroundColor, setSelectedBackgroundColor] =
-    useState("white");
+    useState("#7856");
   const [customColor, setCustomColor] = useState("");
 
   const handleColorChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -40,7 +40,7 @@ const Card = (props: CardProps) => {
       <img className="card-image" src={imageUrl} alt="mage card" />
       <p className="card-text">{text}</p>
       <select value={selectedBackgroundColor} onChange={handleColorChange}>
-        <option value="white">white</option>
+      <option value="blue">blue</option>
         <option value="lightblue">lightblue</option>
         <option value="lightgreen">lightgreen</option>
       </select>
