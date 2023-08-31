@@ -1,11 +1,18 @@
+import React, { useState } from "react";
 import "./App.css";
-import { Example } from "./components/Example/Example";
+import Card from "./components/Card/Card";
+import Text from "./components/Text/Text";
 
 function App() {
+  const handleCardColorChange = (color:string) => {
+    console.log("Selected color:", color); 
+  };
+
   return (
-    <>
-      <Example />{" "}
-    </>
+    <div className="app-container">
+      <Text />
+      <Card backgroundColor="blue" colorChange={handleCardColorChange} />
+    </div>
   );
 }
 

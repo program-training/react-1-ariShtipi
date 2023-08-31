@@ -1,0 +1,26 @@
+.card-container {
+    border: 1px solid #2c1f1f;
+    border-radius: 33px;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-title {
+    font-size: 22px;
+  }
+  
+  .card-image {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .card-text {
+    margin-top: 10px;
+  }
+  .inputColor{
+    width: 28px;
+  }
